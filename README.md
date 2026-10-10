@@ -1,7 +1,9 @@
 # Network Segmentation & Layer 2 Port Security
 
+![Network Topology Architecture](topology.png)
+
 ## Overview
-This project implements a hardened multi-VLAN corporate network architecture built in **Cisco Packet Tracer**. It demonstrates enterprise network segmentation using 802.1Q trunking, Inter-VLAN routing (Router-on-a-Stick), and physical switch-port hardening using **Sticky MAC Port Security** to prevent unauthorized access and rogue device connectivity.
+This project implements a hardened multi-VLAN corporate network architecture built in **Cisco Packet Tracer**. It demonstrates enterprise network segmentation using 802.1Q trunking, Inter-VLAN routing (Router-on-a-Stick), and physical switch-port hardening using **Sticky MAC Port Security** to mitigate unauthorized physical access and rogue device connectivity.
 
 ---
 
@@ -22,7 +24,7 @@ This project implements a hardened multi-VLAN corporate network architecture bui
 ## Key Security Controls Implemented
 
 ### 1. Switch Port Security (Layer 2 Defense)
-* **Interface `Fa0/1` Hardening:** Configured `switchport port-security` with `mac-address sticky` to dynamically learn and bind `PC-IT`'s hardware address into the running configuration.
+* **Interface `Fa0/1` Hardening:** Configured `switchport port-security` with `mac-address sticky` to dynamically learn and bind `PC-IT`'s hardware address directly into the running configuration.
 * **Violation Policy:** Set violation mode to `shutdown`. Connecting an unapproved MAC address triggers an immediate port shutdown (`err-disabled` state), isolating the port until administrator intervention.
 * **Host Limit:** Constrained maximum allowed MAC addresses to `1`.
 
