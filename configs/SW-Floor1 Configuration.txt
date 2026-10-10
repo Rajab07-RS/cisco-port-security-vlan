@@ -1,0 +1,17 @@
+vlan 10
+ name IT_Department
+vlan 20
+ name HR_Department
+!
+interface FastEthernet0/1
+ description Access_Port_PC-IT
+ switchport access vlan 10
+ switchport mode access
+ switchport port-security
+ switchport port-security maximum 1
+ switchport port-security violation shutdown
+ switchport port-security mac-address sticky
+!
+interface GigabitEthernet0/1
+ description Trunk_To_CoreRouter
+ switchport mode trunk
