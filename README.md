@@ -60,5 +60,5 @@ To recover a port placed in an `err-disabled` state following a security violati
 
 ## Project Artifacts
 * **Cisco Packet Tracer Lab File:** [`port-security-vlan.pkt`](port-security-vlan.pkt)
-* **Switch Configuration:** [`configs/SW-Floor1.txt`](configs/SW-Floor1.txt)
-* **Router Configuration:** [`configs/Core-Router.txt`](configs/Core-Router.txt)
+* **Switch Configuration:** [`configs/SW-Floor1.txt`](configs/SW-Floor1 Configuration.txt)
+* **Router Configuration:** [`configs/Core-Router.txt`](configs/Core-Router Configuration.txt)
